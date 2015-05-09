@@ -3,21 +3,21 @@
 use strict;
 
 use lib qw(
-            /export/home/pubology/perl5/lib/perl5/
+            /home/pubology/perl5/lib/perl5/
           );
 
 use CGI;
 use CGI::Carp qw( fatalsToBrowser );
 use Template;
 
-my $HOME = "/export/home/pubology";
+my $HOME = "/home/pubology";
 my $base_url = "http://www.pubology.co.uk/";
 
 my $q = CGI->new;
 
 # Set up template stuff
 my $tt_config = {
-  INCLUDE_PATH => "$HOME/templates/",
+  INCLUDE_PATH => "$HOME/pubology-perl/templates/",
 };
 my $tt = Template->new( $tt_config ) or croak Template->error;
 
