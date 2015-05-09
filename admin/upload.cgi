@@ -95,7 +95,7 @@ sub do_upload {
 
   # Check postal district is valid and figure out which area it's in.
   my $district_conf = PubSite->parse_postal_district_config(
-                          file => "$HOME/conf/postal_districts.conf",
+                          file => "$HOME/pubology-perl/conf/postal_districts.conf",
     ) || print_form_and_exit( errmsg => "<p>$PubSite::errstr</p>" );
 
   my $this_area;
