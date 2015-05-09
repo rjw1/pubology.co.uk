@@ -3,8 +3,8 @@
 use strict;
 
 use lib qw(
-            /export/home/pubology/lib/
-            /export/home/pubology/perl5/lib/perl5/
+            /home/pubology/pubology-perl/lib/
+            /home/pubology/perl5/lib/perl5/
           );
 
 use CGI;
@@ -15,7 +15,7 @@ use POSIX qw( strftime );
 use PubSite;
 use Template;
 
-my $HOME = "/export/home/pubology";
+my $HOME = "/home/pubology";
 my $base_dir = "$HOME/web/vhosts/pubology.co.uk/";
 my $base_url = "http://www.pubology.co.uk/";
 
@@ -27,7 +27,7 @@ if ( $cgi_url !~ /www/ ) {
 
 # Set up template stuff
 my $tt_config = {
-  INCLUDE_PATH => "$HOME/templates/",
+  INCLUDE_PATH => "$HOME/pubology-perl/templates/",
   OUTPUT_PATH => $base_dir,
 };
 my $tt = Template->new( $tt_config ) or croak Template->error;

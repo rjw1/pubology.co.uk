@@ -3,7 +3,7 @@
 use strict;
 
 use lib qw(
-            /export/home/pubology/perl5/lib/perl5/
+            /home/pubology/perl5/lib/perl5/
           );
 
 use CGI;
