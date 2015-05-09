@@ -118,7 +118,7 @@ sub do_upload {
               . "this as a bug.</p>" );
   }
 
-  my $config = Config::Tiny->read( "$HOME/conf/pubology.conf" )
+  my $config = Config::Tiny->read( "$HOME/pubology-perl/conf/pubology.conf" )
                  or croak "Can't read config file: $Config::Tiny::errstr "
                         . "(please report this as a bug)";
 
