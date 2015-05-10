@@ -10,7 +10,9 @@ use lib qw(
 use CGI;
 use CGI::Carp qw( fatalsToBrowser );
 use Config::Tiny;
+use Cwd;
 use File::Copy;
+use File::Spec;
 use POSIX qw( strftime );
 use PubSite;
 use Template;
@@ -136,6 +138,7 @@ sub do_upload {
     check_flickr  => 1,
     flickr_key    => $flickr_key,
     flickr_secret => $flickr_secret,
+    cache_dir     => File::Spec->catfile( getcwd, "cache" ),
   );
   my @pubs = @{ $data{pubs} };
 
