@@ -11,9 +11,6 @@ $(
     $('#banner').anystretch( '/images/banner.jpg' );
     $('#banner h1 a').height(75);
 
-    // Navbar that scrolls with the page.
-    $('#navbar').portamento();
-
     // Make the navbar colour go all the way down.
     var main_height = $('#main_content').height();
     var nav_height = $('#navbar_wrapper').height();

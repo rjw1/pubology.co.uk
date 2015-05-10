@@ -70,20 +70,6 @@ div#navbar li#postal_district_nolink, li#map_nolink {
   padding-left: 1.2em;
 }
 
-#portamento_container {
-  float: left; 
-  position: relative;
-}
-
-#portamento_container #navbar {
-  float: none; 
-  position: absolute;
-}
-
-#portamento_container #navbar.fixed {
-  position: fixed;
-}
-
 div#body_wrapper {
   margin: 0;
   padding: 1em;
